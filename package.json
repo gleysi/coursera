@@ -1,0 +1,23 @@
+{
+  "name": "coursera",
+  "version": "1.0.0",
+  "description": "confusion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleysi/coursera.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.2"
+  },
+  "bugs": {
+    "url": "https://github.com/gleysi/coursera/issues"
+  },
+  "homepage": "https://github.com/gleysi/coursera#readme"
+}
