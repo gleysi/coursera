@@ -1,11 +1,15 @@
 {
   "name": "coursera",
   "version": "1.0.0",
-  "description": "confusion",
-  "main": "index.js",
+  "description": "This is a website for Ristorante Con fusion",
+  "main": "index.html",
   "scripts": {
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css/"
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "repository": {
     "type": "git",
@@ -14,10 +18,18 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.8.2"
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.8.2",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2"
   },
   "bugs": {
     "url": "https://github.com/gleysi/coursera/issues"
   },
-  "homepage": "https://github.com/gleysi/coursera#readme"
+  "homepage": "https://github.com/gleysi/coursera#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0"
+  }
 }
